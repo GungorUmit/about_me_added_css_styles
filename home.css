@@ -1,0 +1,44 @@
+.tareas {
+  align-items: flex-start;
+  padding: 1em 0;
+}
+
+.tarea {
+  padding: 0.5em 0;
+  transform-origin: center left;
+}
+
+.tarea,
+.tarea input {
+  transition: transform ease 0.1s;
+}
+
+.tarea:hover,
+.tarea:focus-within {
+  cursor: pointer;
+  font-weight: 700;
+  transform: scale(1.05);
+}
+
+.tarea:hover input,
+.tarea:focus-within input {
+  transform: scale(1.5) rotateZ(-5deg);
+}
+
+.tarea input:checked + span {
+  text-decoration: line-through;
+}
+
+#nueva-tarea {
+  padding: 1em 0;
+}
+
+#nueva-tarea input {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#nueva-tarea button {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}

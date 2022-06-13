@@ -1,0 +1,95 @@
+html {
+  font-family: -apple-system, system-ui;
+  color: white;
+  background: linear-gradient(45deg, ###000000, ###000000);
+  background-size: 100% 100%;
+  min-height: 100vh;
+}
+
+body {
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 3ch;
+  justify-content: flex-end;
+  margin-bottom: 48px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+a,
+a:visited {
+  color: #050505;
+}
+
+a:hover,
+a:active {
+  color: #5b86e5;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: 1em;
+  color: inherit;
+  padding: 0.5em;
+  background: #243b55;
+  border: solid 2px #f2f3f7;
+  border-radius: 8px;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1em;
+  color: inherit;
+  background: #343e60;
+  border: solid 2px #eaecf3;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #444e70;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ccc;
+}
+
+.oculto {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.fila {
+  display: flex;
+  flex-direction: row;
+  border: none;
+}
+
+.fila--ancha {
+  flex-grow: 1;
+}
+
+.columna--espaciada,
+.fila--espaciada {
+  gap: 16px;
+}
+
+.perspectiva {
+  perspective: 1000px;
+}
